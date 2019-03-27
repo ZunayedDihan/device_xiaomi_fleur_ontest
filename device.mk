@@ -148,6 +148,9 @@ PRODUCT_PACKAGES += \
     SystemUIOverlayFleur \
     SettingsOverlayFleur
 
+PRODUCT_PACKAGES += \
+    NotchBarKiller
+
 # Runtine Device Name Overlays
 PRODUCT_PACKAGES += \
     FleurSettingsProviderOverlay \
@@ -170,8 +173,8 @@ PRODUCT_COPY_FILES += \
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(DEVICE_PATH) \
-	hardware/mediatek
-	
+    hardware/mediatek
+
 # Symbols
 PRODUCT_PACKAGES += \
     libshim_vtservice
