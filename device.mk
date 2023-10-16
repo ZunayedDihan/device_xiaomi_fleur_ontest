@@ -131,6 +131,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     MtkInCallService
 
+# PowerOffAlarm
+PRODUCT_PACKAGES += \
+    PowerOffAlarm
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
@@ -167,7 +171,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_SOONG_NAMESPACES += \
     $(DEVICE_PATH) \
 	hardware/mediatek
-
+	
 # Symbols
 PRODUCT_PACKAGES += \
     libshim_vtservice
