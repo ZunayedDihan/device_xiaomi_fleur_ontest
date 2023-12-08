@@ -93,17 +93,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/keylayout/uinput-fpc.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/uinput-fpc.kl \
     $(LOCAL_PATH)/configs/keylayout/uinput-goodix.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/uinput-goodix.kl
 
-# ImsInit hack
-PRODUCT_PACKAGES += \
-    ImsInit
-
-# ImsService
-PRODUCT_PACKAGES += \
-    com.android.ims.rcsmanager \
-    PresencePolling \
-    RcsService \
-    ImsServiceBase
-
 # Init
 PRODUCT_PACKAGES += \
     init.mt6781.rc \
@@ -178,10 +167,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_SOONG_NAMESPACES += \
     $(DEVICE_PATH) \
     hardware/mediatek
-
-# Symbols
-PRODUCT_PACKAGES += \
-    libshim_vtservice
 
 # Telephony
 PRODUCT_BOOT_JARS += \
