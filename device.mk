@@ -168,10 +168,6 @@ PRODUCT_SOONG_NAMESPACES += \
     $(DEVICE_PATH) \
     hardware/mediatek
 
-# Symbols
-PRODUCT_PACKAGES += \
-    libshim_vtservice
-
 # Telephony
 PRODUCT_BOOT_JARS += \
     mediatek-common \
