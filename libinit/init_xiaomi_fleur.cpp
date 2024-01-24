@@ -15,8 +15,6 @@
 #define FINGERPRINT_ML "Redmi/miel_global/miel:13/SP1A.210812.016/V14.0.5.0.TKEMIXM:user/release-keys"
 #define FINGERPRINT_MLP_IN "POCO/miel_p_in/miel:13/SP1A.210812.016/V14.0.4.0.TKEINXM:user/release-keys"
 #define FINGERPRINT_ML_IN "Redmi/miel_in/miel:13/SP1A.210812.016/V14.0.4.0.TKEINXM:user/release-keys"
-#define FINGERPRINT_EEA "Redmi/fleur_eea/fleur:13/SP1A.210812.016/V14.0.4.0.TKEEUXM:user/test-keys"
-#define FINGERPRINT_EEAP "Redmi/fleur_p_eea/fleur:13/SP1A.210812.016/V14.0.4.0.TKEEUXM:user/test-keys"
 
 static const variant_info_t fleur_info = {
     .hwc_value = "Global",
@@ -73,36 +71,12 @@ static const variant_info_t mielp_info = {
     .build_fingerprint = FINGERPRINT_MLP_IN,
 };
 
-static const variant_info_t fleur_eea_info = {
-    .hwc_value = "Global",
-    .sku_value = "fleur",
-    .brand = "Redmi",
-    .device = "fleur",
-    .marketname = "Redmi Note 11S",
-    .model = "2201117SY",
-    .mod_device = "fleur_eea",
-    .build_fingerprint = FINGERPRINT_EEA,
-};
-
-static const variant_info_t fleurp_eea_info = {
-    .hwc_value = "Global",
-    .sku_value = "fleurp",
-    .brand = "POCO",
-    .device = "fleur",
-    .marketname = "POCO M4 Pro",
-    .model = "2201117PG",
-    .mod_device = "fleur_p_eea",
-    .build_fingerprint = FINGERPRINT_EEAP,
-};
-
 static const std::vector<variant_info_t> variants = {
     fleur_info,
     fleurp_info,
     miel_info,
     mielp_info,
     miel_in_info,
-    fleur_eea_info,
-    fleurp_eea_info
 };
 
 void vendor_load_properties() {
