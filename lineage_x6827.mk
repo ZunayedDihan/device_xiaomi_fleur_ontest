@@ -14,15 +14,15 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # Inherit from fleur device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
-PRODUCT_BRAND := Redmi
-PRODUCT_DEVICE := fleur
-PRODUCT_NAME := lineage_fleur
-PRODUCT_MODEL := Redmi Note 11S 4G
-PRODUCT_MANUFACTURER := Xiaomi
+PRODUCT_BRAND := Infinix
+PRODUCT_DEVICE := x6827
+PRODUCT_NAME := lineage_x6827
+PRODUCT_MODEL := Infinix Hot 20S
+PRODUCT_MANUFACTURER := Infinix
 
-PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+PRODUCT_GMS_CLIENTID_BASE := android-transsion
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="fleur-user 13 SP1A.210812.016 V14.0.5.0.TKEMIXM release-keys"
+    PRIVATE_BUILD_DESC="sys_tssi_64_infinix-user 12 SP1A.210812.016 353179 release-keys"
 
-BUILD_FINGERPRINT := Redmi/fleur_global/fleur:13/SP1A.210812.016/V14.0.5.0.TKEMIXM:user/release-keys
+BUILD_FINGERPRINT := Infinix/X6827-OP/Infinix-X6827:12/SP1A.210812.016/230613V911:user/release-keys

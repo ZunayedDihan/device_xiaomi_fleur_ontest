@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/xiaomi/fleur
+DEVICE_PATH := device/infinix/x6827
 
 # Inherit virtual_ab_ota product
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
@@ -78,8 +78,8 @@ PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/bluetooth/audio/config/sysbta_audio_policy_configuration_7_0.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysbta_audio_policy_configuration_7_0.xml
 
 # DT2W
-PRODUCT_PACKAGES += \
-    DT2W-Service-Fleur
+#PRODUCT_PACKAGES += \
+#    DT2W-Service-Fleur
 
 # Fastbootd
 PRODUCT_PACKAGES += \

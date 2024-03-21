@@ -4,8 +4,8 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/xiaomi/fleur
-PREBUILT_VENDOR := device/xiaomi/fleur-prebuilt
+DEVICE_PATH := device/infinix/x6827
+PREBUILT_VENDOR := device/infinix/x6827-prebuilt
 
 # Architecture
 TARGET_ARCH := arm64
@@ -26,7 +26,7 @@ TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a55
 DEXPREOPT_GENERATE_APEX_IMAGE := true
 
 # Assertion
-TARGET_OTA_ASSERT_DEVICE := x6827,helios
+TARGET_OTA_ASSERT_DEVICE := x6827,helios,X6827
 
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth/include
@@ -61,8 +61,8 @@ BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 BOARD_KERNEL_IMAGE_NAME := Image
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 BOARD_KERNEL_SEPARATED_DTBO := true
-TARGET_KERNEL_SOURCE := kernel/xiaomi/fleur-headers
-TARGET_KERNEL_CONFIG := fleur_defconfig
+TARGET_KERNEL_SOURCE := kernel/infinix/x6827-headers
+TARGET_KERNEL_CONFIG := x6827_defconfig
 
 # Kernel - prebuilt
 TARGET_FORCE_PREBUILT_KERNEL := true
