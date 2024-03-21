@@ -114,8 +114,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/prebuilts/dtb.img:dtb.img
 
 # Lights
-PRODUCT_PACKAGES += \
-    android.hardware.lights-service.fleur
+#PRODUCT_PACKAGES += \
+#    android.hardware.lights-service.fleur
 
 # MTK In-call service
 PRODUCT_PACKAGES += \
